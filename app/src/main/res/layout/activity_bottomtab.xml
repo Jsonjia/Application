@@ -71,6 +71,17 @@
                 android:text="底部导航栏之  自定义Tab View ＋Fragment"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tabnavigation_view_ex"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:background="#1306AF"
+                android:gravity="center"
+                android:text="底部导航栏之  Navagation+Bottom"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
 </layout>

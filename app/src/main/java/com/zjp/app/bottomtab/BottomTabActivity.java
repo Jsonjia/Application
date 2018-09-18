@@ -5,6 +5,7 @@ import android.view.View;
 
 import com.zjp.app.R;
 import com.zjp.app.base.BaseActivity;
+import com.zjp.app.bottomtab.bottomnavigationview_ex.BottomNavigationViewExActivity;
 import com.zjp.app.bottomtab.bottomnavigationviewactivity.BottomNavigationViewActivity;
 import com.zjp.app.bottomtab.bottomtablayout.BottomTabLayoutActivity;
 import com.zjp.app.bottomtab.customtab.CustomTabActivity;
@@ -57,6 +58,13 @@ public class BottomTabActivity extends BaseActivity<ActivityBottomtabBinding> {
             @Override
             public void onClick(View view) {
                 gotoActivity(CustomTabActivity.class);
+            }
+        });
+
+        mViewBinding.tabnavigationViewEx.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoActivity(BottomNavigationViewExActivity.class);
             }
         });
     }

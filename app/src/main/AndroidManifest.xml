@@ -23,6 +23,8 @@
         <activity android:name=".bottomtab.fragmenttabhost.FragmentTabHostActivity" />
         <activity android:name=".bottomtab.radiobottom.RadioGroupTabActivity" />
         <activity android:name=".bottomtab.customtab.CustomTabActivity" />
+        <activity android:name=".bottomtab.bottomnavigationview_ex.BottomNavigationViewExActivity" />
+        <activity android:name=".bottomtab.bottomnavigationview_ex.centerfab.CenterFabActivity" />
     </application>
 
 </manifest>

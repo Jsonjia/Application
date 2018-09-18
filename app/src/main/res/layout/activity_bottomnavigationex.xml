@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        tools:context=".features.MainActivity">
+
+        <Button
+            android:id="@+id/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="不同的样式" />
+
+        <Button
+            android:id="@+id/btn_with_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="配合ViewPager" />
+
+        <Button
+            android:id="@+id/btn_setup_with_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="setup with view pager" />
+
+        <Button
+            android:id="@+id/btn_badge_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="带数字小红点" />
+
+        <Button
+            android:id="@+id/btn_center_fab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="中间漂浮按钮" />
+
+    </LinearLayout>
+
+</layout>
