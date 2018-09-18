@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".bottomtab.BottomTabActivity" />
+        <activity android:name=".bottomtab.bottomtablayout.BottomTabLayoutActivity" />
+        <activity android:name=".bottomtab.bottomnavigationviewactivity.BottomNavigationViewActivity" />
+        <activity android:name=".bottomtab.fragmenttabhost.FragmentTabHostActivity" />
+        <activity android:name=".bottomtab.radiobottom.RadioGroupTabActivity" />
+        <activity android:name=".bottomtab.customtab.CustomTabActivity" />
     </application>
 
 </manifest>
