@@ -7,6 +7,7 @@ import android.view.View;
 import com.zjp.app.base.BaseActivity;
 import com.zjp.app.bottomtab.BottomTabActivity;
 import com.zjp.app.databinding.ActivityMainBinding;
+import com.zjp.app.wx_ninephotos.WxNinePhotoActivity;
 
 public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
@@ -19,6 +20,12 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
     @Override
     public void initView() {
 
+        mViewBinding.btnPhotoClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoActivity(WxNinePhotoActivity.class);
+            }
+        });
 
         mViewBinding.btnBottomTab.setOnClickListener(new View.OnClickListener() {
             @Override
