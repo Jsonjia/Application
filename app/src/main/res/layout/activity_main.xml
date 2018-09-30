@@ -18,10 +18,15 @@
 
         <Button
             android:id="@+id/btn_bottom_tab"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            style="@style/btn_style"
             android:text="底部导航栏几种方法"
             app:layout_constraintTop_toBottomOf="@+id/btn_photo_click" />
+
+        <Button
+            android:id="@+id/chenjinshi"
+            style="@style/btn_style"
+            android:text="沉浸式状态栏"
+            app:layout_constraintTop_toBottomOf="@+id/btn_bottom_tab" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>

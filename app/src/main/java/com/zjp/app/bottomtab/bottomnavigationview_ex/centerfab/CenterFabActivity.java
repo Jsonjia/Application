@@ -7,14 +7,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
 import com.zjp.app.R;
 import com.zjp.app.base.BaseActivity;
-import com.zjp.app.base.BaseFragment;
+import com.zjp.app.bottomtab.TestBaseFragment;
 import com.zjp.app.databinding.ActivityCenterFabBinding;
 
 import java.util.ArrayList;
@@ -47,25 +46,25 @@ public class CenterFabActivity extends BaseActivity<ActivityCenterFabBinding> {
         fragments = new ArrayList<>(4);
 
         // create music fragment and add it
-        BaseFragment musicFragment = new BaseFragment();
+        TestBaseFragment musicFragment = new TestBaseFragment();
         Bundle bundle = new Bundle();
         bundle.putString("title", getString(R.string.music));
         musicFragment.setArguments(bundle);
 
         // create backup fragment and add it
-        BaseFragment backupFragment = new BaseFragment();
+        TestBaseFragment backupFragment = new TestBaseFragment();
         bundle = new Bundle();
         bundle.putString("title", getString(R.string.backup));
         backupFragment.setArguments(bundle);
 
         // create friends fragment and add it
-        BaseFragment favorFragment = new BaseFragment();
+        TestBaseFragment favorFragment = new TestBaseFragment();
         bundle = new Bundle();
         bundle.putString("title", getString(R.string.favor));
         favorFragment.setArguments(bundle);
 
         // create friends fragment and add it
-        BaseFragment visibilityFragment = new BaseFragment();
+        TestBaseFragment visibilityFragment = new TestBaseFragment();
         bundle = new Bundle();
         bundle.putString("title", getString(R.string.visibility));
         visibilityFragment.setArguments(bundle);

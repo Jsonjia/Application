@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+            <!--轮播图-->
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/layout_slider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <!--按钮-->
+            <ImageView
+                android:id="@+id/btn_message"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:fitsSystemWindows="true"
+                android:src="@drawable/btn_message_selector" />
+
+            <View
+                android:id="@+id/notify_red_dot"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/red_dot"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="#ff5d5d"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -31,7 +31,7 @@ public class ImageActivity extends BaseActivity {
     private PhotoViewPager viewpage;
 
     private String[] list;
-    private int position;
+//    private int position;
 
     private PopAdapter popAdapter;
 
@@ -59,14 +59,14 @@ public class ImageActivity extends BaseActivity {
     public void initView() {
         Intent intent = getIntent();
         list = intent.getStringArrayExtra("STRLIST");
-        position = intent.getIntExtra("IMG", 0);
+//        position = intent.getIntExtra("IMG", 0);
 
         viewpage = findViewById(R.id.viewpage);
-        viewpage.setTransitionName("img" + position);
+        viewpage.setTransitionName("img" + intent.getIntExtra("IMG", 0));
 
         popAdapter = new PopAdapter(list);
         viewpage.setAdapter(popAdapter);
-        viewpage.setCurrentItem(position);
+        viewpage.setCurrentItem(intent.getIntExtra("IMG", 0));
 
         viewpage.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override

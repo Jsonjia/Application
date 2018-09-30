@@ -5,4 +5,7 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="colorGray">#ccc</color>
+    <color name="tab_bar_color">#aaffffff</color>
+    <color name="tab_select_color">#007aff</color>
+    <color name="tab_default_color">#555555</color>
 </resources>
