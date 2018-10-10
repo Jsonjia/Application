@@ -18,14 +18,13 @@ public class DiscoverTabFragment extends BaseFragment<FragmentDiscoverLayoutBind
 
     @Override
     protected void initView() {
-//        mViewBinding
-//        back.setVisibility(View.INVISIBLE);
-//        titleName.setText(R.string.discover_title);
-//
-//        getActivity().getWindow()
-//                .getDecorView()
-//                .setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-//        ViewColor.FlymeSetStatusBarLightMode(getActivity().getWindow(), true); //不加这一步，在魅族手机状态栏适配失败
+        mViewBinding.back.setVisibility(View.INVISIBLE);
+        mViewBinding.titleName.setText(R.string.visibility);
+
+        getActivity().getWindow()
+                .getDecorView()
+                .setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        ViewColor.FlymeSetStatusBarLightMode(getActivity().getWindow(), true); //不加这一步，在魅族手机状态栏适配失败
     }
 
     @Override
@@ -41,7 +40,7 @@ public class DiscoverTabFragment extends BaseFragment<FragmentDiscoverLayoutBind
     @Override
     public void onHiddenChanged(boolean hidden) {
         super.onHiddenChanged(hidden);
-        if(!hidden){
+        if (!hidden) {
             getActivity().getWindow()
                     .getDecorView()
                     .setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);

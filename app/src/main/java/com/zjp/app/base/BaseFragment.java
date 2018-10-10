@@ -18,7 +18,7 @@ import com.zjp.app.statusbartranslucent.status_translucent1.ViewColor;
 /**
  * Created by zjp on 2018/9/30 15:11
  */
-public abstract class BaseFragment<B extends ViewDataBinding> extends Fragment{
+public abstract class BaseFragment<B extends ViewDataBinding> extends Fragment {
 
     protected Context mContext;
     private ViewGroup mView;

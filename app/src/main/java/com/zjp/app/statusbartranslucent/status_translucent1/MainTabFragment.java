@@ -27,7 +27,7 @@ public class MainTabFragment extends BaseFragment<FragmentMainTabLayoutBinding> 
         getActivity().getWindow()
                 .getDecorView()
                 .setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
-        mStatusBarView.setVisibility(View.GONE);
+//        mStatusBarView.setVisibility(View.GONE);
 
         //        ViewColor.MIUISetStatusBarLightMode(getActivity().getWindow(), false); //设置miui状态栏字体颜色
         ViewColor.FlymeSetStatusBarLightMode(getActivity().getWindow(), false); //不加这一步，在魅族手机状态栏适配失败

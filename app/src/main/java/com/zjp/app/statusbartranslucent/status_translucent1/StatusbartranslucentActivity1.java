@@ -34,10 +34,11 @@ public class StatusbartranslucentActivity1 extends BaseActivity<ActivityStatusba
 
     @Override
     public void initView() {
+        initState();
         mViewBinding.tabhost.setup(this, getSupportFragmentManager(), android.R.id.tabcontent);
         mViewBinding.tabhost.getTabWidget().setShowDividers(LinearLayout.SHOW_DIVIDER_NONE); //去掉分割线
         for (int i = 0; i < mImages.length; i++) {
-             // Tab按钮添加文字和图片
+            // Tab按钮添加文字和图片
             TabHost.TabSpec tabSpec = mViewBinding.tabhost.newTabSpec(mTags[i]).setIndicator(getImageView(i));
             // 添加Fragment
             mViewBinding.tabhost.addTab(tabSpec, mFragmentClasses[i], null);
@@ -78,7 +79,7 @@ public class StatusbartranslucentActivity1 extends BaseActivity<ActivityStatusba
     @Override
     protected void onResume() {
         super.onResume();
-        if ( mViewBinding.tabhost != null && mCurrentSelectTab != null) {
+        if (mViewBinding.tabhost != null && mCurrentSelectTab != null) {
             mViewBinding.tabhost.onTabChanged(mCurrentSelectTab);
             if (isBackFind) {
                 mViewBinding.tabhost.setCurrentTab(1);
